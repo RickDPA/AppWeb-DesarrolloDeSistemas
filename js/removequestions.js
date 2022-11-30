@@ -62,7 +62,7 @@ const questionBank = [];
 const newObject = localStorage.getItem("questionBank");
 let dataStored = JSON.parse(newObject);
 
-if (dataStored != "") {
+if (dataStored) {
     for (i = 0; i < dataStored.length; i++) {
         questionBank.push(dataStored[i]);
     }
